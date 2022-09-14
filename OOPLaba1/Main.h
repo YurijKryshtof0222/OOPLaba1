@@ -19,7 +19,7 @@ public:
 	double calculate()
 	{
 		double result = y + atan(pow(abs(x * x + z), 0.1));
-		result /= 3/x + pow(sin(pow(y + z, 3)), 2);
+		result /= 3.0/x + pow(sin(pow(y + z, 3)), 2);
 		result += y * exp(-(x + z) / (y + z));
 		return x * result;
 	}
